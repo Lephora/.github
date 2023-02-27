@@ -26,6 +26,6 @@
 
 + 实践：
     + openapi独立在前后端项目仓库之外
-    + 开发过程中，先发布openapi，前端使用orval自动生成axios代码，以及openopi-generator生成mock服务，后端使用契约测试cover接口schema校验
+    + 开发过程中，先发布openapi，前端使用orval自动生成axios代码，以及prism生成mock服务，后端使用契约测试cover接口schema校验
     + dev环境下，开发前，先发布openapi。开发完毕后，发布代码，ci运行端到端测试以及基于openapi的branch:master契约测试，获得契约报告
     + prod环境下，发布新版本v1.0.0前，给当前版本openapi打上tag为v1.0.0，ci基于openapi的tag:v1.0.0进行契约测试，测试成功才能成功发布，每个版本的服务，都会对应一个由开发人员商议和发布的openapi版本
